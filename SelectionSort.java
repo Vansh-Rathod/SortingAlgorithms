@@ -11,6 +11,8 @@ public class SelectionSort {
                 if (arr[j] < arr[min]) {
                     min = j;
                 }
+            }
+            if (arr[i] != arr[min]) { // if the first selected element is not minimum number then only swap, otherwise dont swap
                 temp = arr[min];
                 arr[min] = arr[i];
                 arr[i] = temp;
